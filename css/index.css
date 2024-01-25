@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.page1 {
+  width: 100%;
+  height: 110vh;
+  background-image: url("../img/7.jpg");
+  background-size: cover;
+  background-position: bottom;
+  opacity: 0.5;
+}
+
+.page2 img {
+  width: 100%;
+  -webkit-clip-path: circle(35% at 50% 50%);
+          clip-path: circle(35% at 50% 50%);
+  z-index: 1;
+}
+.page2 .boy {
+  position: relative;
+}
+.page2 .boy::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 18%;
+  left: 20%;
+  border: 3px solid rgba(226, 209, 195, 0.5);
+  background-color: #e2d1c3;
+  border-radius: 50%;
+}
+.page2 .girl {
+  position: relative;
+}
+.page2 .girl::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 18%;
+  left: 20%;
+  border: 3px solid rgba(243, 210, 210, 0.5);
+  background-color: #f3d2d2;
+  border-radius: 50%;
+}
