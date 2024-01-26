@@ -4,11 +4,25 @@
 }
 .page1 {
 width: 100%;
-height: 110vh;
+height: 120vh;
 background-image: url("../img/7.jpg");
 background-size: cover;
-background-position: bottom;
-opacity: 0.5;
+background-position: center;
+position: relative;
+    .text{
+        z-index: 2;
+        width: 60%;
+    }
+}
+.page1::before{
+    content: " ";
+    background-color: rgba($color: #dddddd, $alpha: 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 .page2 {
     img{
