@@ -1,58 +1,6 @@
 .page1 {
-  justify-content: space-between;
-}
-.page1 .page1Pic {
-  width: 100%;
-}
-.page1 .page1Text {
-  writing-mode: vertical-rl;
-  font-family: "Noto Serif TC", serif;
-  color: rgb(206, 181, 148);
-  padding-right: 50px;
-}
-.page1 .page1Text h1 {
-  padding-top: 50px;
-  font-weight: 900;
-  letter-spacing: 10px;
-}
-.page1 .page1Text .littleText {
-  padding-top: 200px;
-}
-.page1 .page1Text .littleText p {
-  font-size: 20px;
-  letter-spacing: 10px;
-}
-
-.page2 {
   height: 100vh;
-}
-.page2 .page2Pic {
-  font-family: "Noto Serif TC", serif;
-  height: 100%;
-  background-position: center;
   background-size: cover;
-  position: relative;
-}
-.page2 .page2Pic span {
-  position: absolute;
-  top: 150px;
-  left: 0;
-  color: white;
-  font-size: 25px;
-  letter-spacing: 10px;
-  border-bottom: 5px solid rgb(206, 181, 148);
-  padding: 0 0 10px 10px;
-}
-
-.page3 .page3Text {
-  writing-mode: vertical-lr;
-  font-family: "Noto Serif TC", serif;
-  color: rgb(206, 181, 148);
-}
-.page3 .bridegroom, .page3 .bride {
-  display: flex;
-  justify-content: center;
-}
-.page3 .bridegroomPic, .page3 .bridePic {
-  width: 50%;
+  background-position: bottom;
+  background-image: url("/img/9.jpg");
 }
