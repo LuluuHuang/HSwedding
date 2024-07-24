@@ -1,6 +1,112 @@
+@charset "UTF-8";
 .page1 {
   height: 100vh;
+  position: relative;
   background-size: cover;
   background-position: bottom;
   background-image: url("/img/9.jpg");
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.page1 svg {
+  width: 40%;
+  animation: moveClip 5s forwards infinite;
+}
+@keyframes moveClip {
+  from {
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}
+
+.page1::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+}
+
+.page2 {
+  background-image: url("/img/紙背景.png");
+  background-size: cover;
+  overflow: hidden;
+}
+.page2 .content {
+  height: 100vh;
+  background-image: url("/img/黑色禮服去背.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page2 .content .contentImg {
+  padding-top: 50px;
+  height: 90%;
+}
+.page2 .png3 {
+  width: 400px;
+  position: absolute;
+  right: -180px;
+  top: -200px;
+}
+.page2 .png4 {
+  width: 400px;
+  position: absolute;
+  left: -180px;
+  bottom: -200px;
+}
+.page2 .png5 {
+  width: 400px;
+  position: absolute;
+  right: -180px;
+  bottom: -1000px;
+}
+.page2 .png6 {
+  width: 400px;
+  position: absolute;
+  left: -180px;
+  bottom: -1700px;
+}
+.page2 .dresscode {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.page2 .dresscode .dresscodeImg {
+  width: 70%;
+}
+.page2 .dresscode .svgContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.page2 .dresscode .dresscodeText {
+  width: 50%;
+}
+.page2 .joinLine {
+  height: 100vh;
+  background-image: url("/img/去logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  align-items: center;
+}
+.page2 .joinLine .phone {
+  width: 30%;
+}
+.page2 .joinLine .centerImg {
+  width: 30%;
+}
+.page2 .joinLine .centerImg img {
+  width: 100%;
 }
