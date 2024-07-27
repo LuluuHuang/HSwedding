@@ -6,12 +6,16 @@ body{
   position: relative;
   background-size: cover;
   background-position: bottom;
-  background-image: url('/Swedding/img/9.jpg');
+  background-image: url('/img/9.jpg');
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
+  .write{
+    width: 400px;
+  }
   svg {
-    width: 40%;
+    // width: 60%;
     animation: moveClip 5s forwards infinite;
   }
   @keyframes moveClip {
@@ -27,8 +31,9 @@ body{
   content: " ";
   position: absolute;
   width: 100%;
-  height: 20%;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 .page2{
   background-image: url("/Swedding/img/紙背景.png");
@@ -103,7 +108,7 @@ body{
     .centerImg{
       width: 30%;
       img{
-        width: 100%;
+        width: 80%;
       }
     }
   }
