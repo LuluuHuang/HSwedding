@@ -17,7 +17,7 @@ body {
 .page1 .write {
   width: 400px;
 }
-.page1 svg {
+.page1 .arrow {
   animation: moveClip 5s forwards infinite;
 }
 @keyframes moveClip {
@@ -29,6 +29,9 @@ body {
     -webkit-clip-path: inset(0 0 0 0);
             clip-path: inset(0 0 0 0);
   }
+}
+.page1 #play {
+  display: none;
 }
 
 .page1::after {
@@ -143,16 +146,32 @@ body {
 
 @media (max-width: 767px) {
   .page1 {
-    height: 75vw;
+    height: 180vw;
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url("/Swedding/img/手機版喜帖.png");
+    position: relative;
   }
   .page1 .write {
-    width: 30vw;
+    display: none;
   }
-  .page1 svg {
+  .page1 .arrow {
     width: 30vw;
     height: 100px;
+  }
+  .page1 #play {
+    background-color: rgb(200, 200, 199);
+    width: 12vw;
+    height: 12vw;
+    border: none;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    bottom: 12vw;
+    z-index: 1;
+  }
+  .page1::after {
+    background: none;
   }
   .page2 .png3 {
     width: 50vw;
@@ -214,7 +233,11 @@ body {
   .page2 .joinLinePhone .phone {
     width: 80%;
   }
-  .page2 .joinLinePhone .line {
+  .page2 .joinLinePhone a {
+    display: flex;
+    justify-content: center;
+  }
+  .page2 .joinLinePhone a .line {
     width: 80%;
   }
   .page2 .joinLinePhone .centerImg {

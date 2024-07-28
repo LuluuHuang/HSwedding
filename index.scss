@@ -14,7 +14,7 @@ body{
   .write{
     width: 400px;
   }
-  svg {
+  .arrow {
     // width: 60%;
     animation: moveClip 5s forwards infinite;
   }
@@ -25,6 +25,9 @@ body{
     to {
         clip-path: inset(0 0 0 0);
     }
+  }
+  #play{
+    display: none;
   }   
 }
 .page1::after{
@@ -137,16 +140,32 @@ body{
 }
 @media (max-width :767px) {
   .page1{
-    height: 75vw;
+    height: 180vw;
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url("/Swedding/img/手機版喜帖.png");
+    position: relative;
     .write{
-      width: 30vw;
+      display: none;
     }
-    svg{
+    .arrow{
       width: 30vw;
       height: 100px;
     }
+    #play{
+      background-color: rgb(200, 200, 199);
+      width: 12vw;
+      height: 12vw;
+      border: none;
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      bottom: 12vw;
+      z-index: 1;
+    }  
+  }
+  .page1::after{
+    background: none;
   }
   .page2{
     .png3{
@@ -208,8 +227,12 @@ body{
       .phone{
         width: 80%;
       }
-      .line{
-        width: 80%;
+      a{
+        display: flex;
+        justify-content: center;
+        .line{
+          width: 80%;
+        }
       }
       .centerImg{
         width: 50%;
