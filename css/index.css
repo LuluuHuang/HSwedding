@@ -8,7 +8,7 @@ body {
   position: relative;
   background-size: cover;
   background-position: bottom;
-  background-image: url("/img/9.jpg");
+  background-image: url("/Swedding/img/9.jpg");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,13 +41,13 @@ body {
 }
 
 .page2 {
-  background-image: url("/img/紙背景.png");
+  background-image: url("/Swedding/img/紙背景.png");
   background-size: cover;
   overflow: hidden;
 }
 .page2 .content {
   height: 100vh;
-  background-image: url("/img/黑色禮服去背.png");
+  background-image: url("/Swedding/img/黑色禮服去背.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -107,7 +107,7 @@ body {
 }
 .page2 .joinLine {
   height: 100vh;
-  background-image: url("/img/去logo.png");
+  background-image: url("/Swedding/img/去logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -176,7 +176,7 @@ body {
   }
   .page2 .content {
     height: 260vw;
-    background-image: url("/img/手機版黑禮服去背.png");
+    background-image: url("/Swedding/img/手機版黑禮服去背.png");
     background-size: cover;
     background-position: bottom;
   }
