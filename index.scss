@@ -6,7 +6,7 @@ body{
   position: relative;
   background-size: cover;
   background-position: bottom;
-  background-image: url('/Swedding/img/9.jpg');
+  background-image: url("/img/9.jpg");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,14 +36,15 @@ body{
   background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 .page2{
-  background-image: url("/Swedding/img/紙背景.png");
+  background-image: url("/img/紙背景.png");
   background-size: cover;
   overflow: hidden;
   .content{
     height: 100vh;
-    background-image: url("/Swedding/img/黑色禮服去背.png");
+    background-image: url("/img/黑色禮服去背.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -69,13 +70,14 @@ body{
     width: 400px;
     position: absolute;
     right: -180px;
-    bottom: -1000px;
+    bottom: -1150px;
   }
   .png6{
     width: 400px;
     position: absolute;
     left: -180px;
-    bottom: -1700px;
+    bottom: -1950px;
+    z-index: 1;
   }
   .dresscode{
     height: 100vh;
@@ -89,6 +91,9 @@ body{
     .svgContainer{
       display: flex;
       justify-content: space-between;
+      svg{
+        margin-right: 20px;
+      }
     }
     .dresscodeText{
       width: 50%;
@@ -96,19 +101,124 @@ body{
   }
   .joinLine{
     height: 100vh;
-    background-image: url("/Swedding/img/去logo.png");
+    background-image: url("/img/去logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
     display: flex;
     align-items: center;
+    position: relative;
     .phone{
-      width: 35%;
+      width: 23%;
+      margin: 0 50px;
+    }
+    .line{
+      width: 25%;
+      margin-bottom: 100px;
     }
     .centerImg{
       width: 30%;
-      img{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: calc(50% - 150px);
+      bottom: 10px;
+      .thanku{
+        width: 300px;
+      }
+      .meet{
+        width: 300px;
+      }
+    }
+  }
+  .joinLinePhone{
+    display: none;
+  }
+}
+@media (max-width :767px) {
+  .page1{
+    height: 75vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .write{
+      width: 30vw;
+    }
+    svg{
+      width: 30vw;
+      height: 100px;
+    }
+  }
+  .page2{
+    .png3{
+      width: 50vw;
+      right: -20vw;
+      top: -15vw;
+    }
+    .png4{
+      width: 50vw;
+      left: -20vw;
+      top:230vw;
+    }
+    .png5{
+      width: 50vw;
+      right: -20vw;
+      bottom: -230vw;
+    }
+    .png6{
+      width: 50vw;
+      left: -20vw;
+      bottom: -420vw;
+    }
+    .content{
+      height: 260vw;
+      background-image: url("/img/手機版黑禮服去背.png");
+      background-size: cover;
+      background-position: bottom;
+      .contentImg{
+        padding-top: 100px;
+        width: 80vw;
+        height: auto;
+      }
+    }
+    .dresscode{
+      height: auto;
+      .dresscodeImg{
         width: 80%;
+        padding-top: 80px;
+      }
+      .svgContainer{
+        display: flex;
+        flex-direction: column;
+        svg{
+          margin: 0 0 20px 0;
+        }
+      }
+      .dresscodeText{
+        width: 80%;
+        padding-bottom: 100px;
+      }
+    }
+    .joinLine{
+      display: none;
+    }
+    .joinLinePhone{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .phone{
+        width: 80%;
+      }
+      .line{
+        width: 80%;
+      }
+      .centerImg{
+        width: 50%;
+        img{
+          width: 100%;
+        }
+      }
+      .lastImg{
+        width: 100%;
       }
     }
   }

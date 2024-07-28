@@ -8,7 +8,7 @@ body {
   position: relative;
   background-size: cover;
   background-position: bottom;
-  background-image: url("/Swedding/img/9.jpg");
+  background-image: url("/img/9.jpg");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,15 +41,16 @@ body {
 }
 
 .page2 {
-  background-image: url("/Swedding/img/紙背景.png");
+  background-image: url("/img/紙背景.png");
   background-size: cover;
   overflow: hidden;
 }
 .page2 .content {
   height: 100vh;
-  background-image: url("/Swedding/img/黑色禮服去背.png");
+  background-image: url("/img/黑色禮服去背.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -75,13 +76,14 @@ body {
   width: 400px;
   position: absolute;
   right: -180px;
-  bottom: -1000px;
+  bottom: -1150px;
 }
 .page2 .png6 {
   width: 400px;
   position: absolute;
   left: -180px;
-  bottom: -1700px;
+  bottom: -1950px;
+  z-index: 1;
 }
 .page2 .dresscode {
   height: 100vh;
@@ -97,24 +99,131 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.page2 .dresscode .svgContainer svg {
+  margin-right: 20px;
+}
 .page2 .dresscode .dresscodeText {
   width: 50%;
 }
 .page2 .joinLine {
   height: 100vh;
-  background-image: url("/Swedding/img/去logo.png");
+  background-image: url("/img/去logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .page2 .joinLine .phone {
-  width: 35%;
+  width: 23%;
+  margin: 0 50px;
+}
+.page2 .joinLine .line {
+  width: 25%;
+  margin-bottom: 100px;
 }
 .page2 .joinLine .centerImg {
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: calc(50% - 150px);
+  bottom: 10px;
 }
-.page2 .joinLine .centerImg img {
-  width: 80%;
+.page2 .joinLine .centerImg .thanku {
+  width: 300px;
+}
+.page2 .joinLine .centerImg .meet {
+  width: 300px;
+}
+.page2 .joinLinePhone {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .page1 {
+    height: 75vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .page1 .write {
+    width: 30vw;
+  }
+  .page1 svg {
+    width: 30vw;
+    height: 100px;
+  }
+  .page2 .png3 {
+    width: 50vw;
+    right: -20vw;
+    top: -15vw;
+  }
+  .page2 .png4 {
+    width: 50vw;
+    left: -20vw;
+    top: 230vw;
+  }
+  .page2 .png5 {
+    width: 50vw;
+    right: -20vw;
+    bottom: -230vw;
+  }
+  .page2 .png6 {
+    width: 50vw;
+    left: -20vw;
+    bottom: -420vw;
+  }
+  .page2 .content {
+    height: 260vw;
+    background-image: url("/img/手機版黑禮服去背.png");
+    background-size: cover;
+    background-position: bottom;
+  }
+  .page2 .content .contentImg {
+    padding-top: 100px;
+    width: 80vw;
+    height: auto;
+  }
+  .page2 .dresscode {
+    height: auto;
+  }
+  .page2 .dresscode .dresscodeImg {
+    width: 80%;
+    padding-top: 80px;
+  }
+  .page2 .dresscode .svgContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .page2 .dresscode .svgContainer svg {
+    margin: 0 0 20px 0;
+  }
+  .page2 .dresscode .dresscodeText {
+    width: 80%;
+    padding-bottom: 100px;
+  }
+  .page2 .joinLine {
+    display: none;
+  }
+  .page2 .joinLinePhone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page2 .joinLinePhone .phone {
+    width: 80%;
+  }
+  .page2 .joinLinePhone .line {
+    width: 80%;
+  }
+  .page2 .joinLinePhone .centerImg {
+    width: 50%;
+  }
+  .page2 .joinLinePhone .centerImg img {
+    width: 100%;
+  }
+  .page2 .joinLinePhone .lastImg {
+    width: 100%;
+  }
 }
