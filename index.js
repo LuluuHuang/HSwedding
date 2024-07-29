@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const audio = document.getElementById('audio');
     const playButton = document.getElementById('play');
-    const overlay = document.getElementById('overlay');
+    // const overlay = document.getElementById('overlay');
 
     const updatePlayButton = () => {
       if (audio.paused) {
@@ -24,6 +24,18 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       updatePlayButton();
     });
+    // const handleScroll = () => {
+    //   if (audio.paused) {
+    //     audio.play().catch(error => {
+    //       console.log('Autoplay was prevented:', error);
+    //     });
+    //     updatePlayButton();
+    //     // 移除滾動監聽器，防止多次播放
+    //     window.removeEventListener('scroll', handleScroll);
+    //   }
+    // };
+
+    // window.addEventListener('scroll', handleScroll);
 
     playButton.addEventListener('click', () => {
       if (audio.paused) {

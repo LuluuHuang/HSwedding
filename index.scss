@@ -54,7 +54,7 @@ body{
   background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 .page2{
-  background-image: url("/Swedding/img/紙背景.png");
+  background-image: url("/Swedding/img/紙背景.jpg");
   background-size: cover;
   overflow: hidden;
   .content{
@@ -95,7 +95,7 @@ body{
     position: absolute;
     left: -180px;
     bottom: -1950px;
-    z-index: 1;
+    z-index: 3;
   }
   .dresscode{
     height: 100vh;
@@ -116,6 +116,9 @@ body{
     .dresscodeText{
       width: 50%;
     }
+    .dressTextPhone{
+      display: none;
+    }
   }
   .joinLine{
     height: 100vh;
@@ -131,8 +134,9 @@ body{
       margin: 0 50px;
     }
     a{
+      width: 30%;
       .line{
-        width: 28%;
+        width: 100%;
         margin-bottom: 100px;
       }
     }
@@ -143,11 +147,8 @@ body{
       position: absolute;
       left: calc(50% - 150px);
       bottom: 10px;
-      .thanku{
-        width: 300px;
-      }
       .meet{
-        width: 300px;
+        width: 200px;
       }
     }
   }
@@ -160,7 +161,7 @@ body{
     height: 180vw;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("/Swedding/img/手機版喜帖.png");
+    background-image: url("/Swedding/img/手機版喜帖.jpg");
     position: relative;
     .write{
       display: none;
@@ -200,12 +201,13 @@ body{
     .png5{
       width: 50vw;
       right: -20vw;
-      bottom: -230vw;
+      bottom: -170vw;
+      z-index: 3;
     }
     .png6{
       width: 50vw;
       left: -20vw;
-      bottom: -420vw;
+      bottom: -350vw;
     }
     .content{
       height: 260vw;
@@ -232,7 +234,10 @@ body{
         }
       }
       .dresscodeText{
-        width: 80%;
+        display: none;
+      }
+      .dressTextPhone{
+        display: block;
         padding-bottom: 100px;
       }
     }
@@ -255,12 +260,13 @@ body{
         display: flex;
         justify-content: center;
         z-index: 2;
+        padding-top: 100px;
         .line{
-          width: 80%;
+          width: 60%;
         }
       }
       .centerImg{
-        width: 50%;
+        width: 30%;
         z-index: 2;
         img{
           width: 100%;
