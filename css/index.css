@@ -207,13 +207,13 @@ body {
   .page2 .png5 {
     width: 50vw;
     right: -20vw;
-    bottom: -170vw;
+    bottom: -250vw;
     z-index: 3;
   }
   .page2 .png6 {
     width: 50vw;
     left: -20vw;
-    bottom: -350vw;
+    bottom: -450vw;
   }
   .page2 .content {
     height: 260vw;
@@ -245,6 +245,7 @@ body {
   }
   .page2 .dresscode .dressTextPhone {
     display: block;
+    width: 90%;
     padding-bottom: 100px;
   }
   .page2 .joinLine {

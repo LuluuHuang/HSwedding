@@ -201,13 +201,13 @@ body{
     .png5{
       width: 50vw;
       right: -20vw;
-      bottom: -170vw;
+      bottom: -250vw;
       z-index: 3;
     }
     .png6{
       width: 50vw;
       left: -20vw;
-      bottom: -350vw;
+      bottom: -450vw;
     }
     .content{
       height: 260vw;
@@ -238,6 +238,7 @@ body{
       }
       .dressTextPhone{
         display: block;
+        width: 90%;
         padding-bottom: 100px;
       }
     }
