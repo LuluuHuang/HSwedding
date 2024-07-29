@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="./css/index.css" />
 </head>
 <body>
+    <div id="overlay"></div>
     <audio id="audio" src="/Swedding/img/music.mp3"></audio>
     <div class="page1">
         <img src="./img/手寫字體.png" alt="" class="write">
@@ -30,11 +31,11 @@
                 </g>
             </g>
         </svg>
-        <button id="play">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+        <div id="play">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(181, 181, 181)" class="bi bi-play-fill" viewBox="0 0 16 16">
                 <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
             </svg>
-        </button>
+        </div>
     </div>
     <div class="page2">
         <div class="content">
@@ -67,7 +68,9 @@
         </div>
         <div class="joinLine">
             <img src="./img/phone.png" alt="" class="phone">
-            <img src="./img/line.png" alt="" class="line">
+            <a href="https://line.me/R/ti/p/@580bnrfl">
+                <img src="./img/line.png" alt="" class="line">
+            </a>            
             <div class="centerImg">
                 <img src="./img/7.png" alt="" class="thanku">
                 <img src="./img/meet.png" alt="" class="meet">
@@ -82,7 +85,6 @@
                 <img src="./img/7.png" alt="" class="thanku">
                 <img src="./img/meet.png" alt="" class="meet">
             </div>
-            <img src="./img/lastImg.jpg" alt="" class="lastImg">
         </div>
     </div>
     <script src="./index.js"></script>

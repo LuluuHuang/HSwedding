@@ -1,6 +1,18 @@
 body{
   margin: 0;
 }
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 .page1{
   height: 100vh;
   position: relative;
@@ -27,7 +39,10 @@ body{
     }
   }
   #play{
-    display: none;
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    z-index: 1;
   }   
 }
 .page1::after{
@@ -115,9 +130,11 @@ body{
       width: 23%;
       margin: 0 50px;
     }
-    .line{
-      width: 25%;
-      margin-bottom: 100px;
+    a{
+      .line{
+        width: 28%;
+        margin-bottom: 100px;
+      }
     }
     .centerImg{
       width: 30%;
@@ -153,14 +170,16 @@ body{
       height: 100px;
     }
     #play{
-      background-color: rgb(200, 200, 199);
-      width: 12vw;
-      height: 12vw;
-      border: none;
-      border-radius: 50%;
-      display: block;
+      width: 13vw;
+      height: 13vw;
+      background-color: rgb(255, 255, 255);
       position: absolute;
-      bottom: 12vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      right: 44vw;
+      top: 155vw;
       z-index: 1;
     }  
   }
@@ -224,25 +243,39 @@ body{
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-image: url("/Swedding/img/lastImg.jpg");
+      background-size: cover;
+      background-position: center;
+      position: relative;
       .phone{
-        width: 80%;
+        width: 70%;
+        z-index: 2;
       }
       a{
         display: flex;
         justify-content: center;
+        z-index: 2;
         .line{
           width: 80%;
         }
       }
       .centerImg{
         width: 50%;
+        z-index: 2;
         img{
           width: 100%;
         }
       }
-      .lastImg{
-        width: 100%;
-      }
+    }
+    .joinLinePhone::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.5); /* 50% transparent gray */
+      z-index: 1;
     }
   }
 }
