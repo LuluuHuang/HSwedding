@@ -135,9 +135,16 @@ body{
     }
     a{
       width: 30%;
+      position: relative;
       .line{
         width: 100%;
         margin-bottom: 100px;
+      }
+      .click{
+        width: 18vw;
+        position: absolute;
+        bottom: 9vw;
+        left: 7.5vw;
       }
     }
     .centerImg{
@@ -261,16 +268,15 @@ body{
         display: flex;
         justify-content: center;
         z-index: 2;
-        padding-top: 100px;
+        position: relative;
         .line{
           width: 60%;
         }
-      }
-      .centerImg{
-        width: 30%;
-        z-index: 2;
-        img{
-          width: 100%;
+        .click{
+          position: absolute;
+          top: 18vw;
+          width: 33vw;
+          left: 36vw;
         }
       }
     }
