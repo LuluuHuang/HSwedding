@@ -21,7 +21,7 @@ body {
   position: relative;
   background-size: cover;
   background-position: bottom;
-  background-image: url("/Swedding/img/9.jpg");
+  background-image: url("/HSwedding/img/9.jpg");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,13 +60,13 @@ body {
 }
 
 .page2 {
-  background-image: url("/Swedding/img/紙背景.jpg");
+  background-image: url("/HSwedding/img/紙背景.jpg");
   background-size: cover;
   overflow: hidden;
 }
 .page2 .content {
   height: 100vh;
-  background-image: url("/Swedding/img/黑色禮服去背.png");
+  background-image: url("/HSwedding/img/黑色禮服去背.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -129,7 +129,7 @@ body {
 }
 .page2 .joinLine {
   height: 100vh;
-  background-image: url("/Swedding/img/去logo.png");
+  background-image: url("/HSwedding/img/去logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -175,7 +175,7 @@ body {
     height: 180vw;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("/Swedding/img/手機版喜帖.jpg");
+    background-image: url("/HSwedding/img/手機版喜帖.jpg");
     position: relative;
   }
   .page1 .write {
@@ -224,7 +224,7 @@ body {
   }
   .page2 .content {
     height: 260vw;
-    background-image: url("/Swedding/img/手機版黑禮服去背.png");
+    background-image: url("/HSwedding/img/手機版黑禮服去背.png");
     background-size: cover;
     background-position: bottom;
   }
@@ -262,7 +262,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("/Swedding/img/lastImg.jpg");
+    background-image: url("/HSwedding/img/lastImg.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
