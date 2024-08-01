@@ -150,10 +150,10 @@ body {
   margin-bottom: 100px;
 }
 .page2 .joinLine a .click {
-  width: 18vw;
+  width: 25vw;
   position: absolute;
-  bottom: 7vw;
-  left: 7.5vw;
+  bottom: 4vw;
+  left: 4vw;
 }
 .page2 .joinLine .centerImg {
   width: 30%;
@@ -282,9 +282,9 @@ body {
   }
   .page2 .joinLinePhone a .click {
     position: absolute;
-    top: 20vw;
-    width: 36vw;
-    left: 35vw;
+    top: 18vw;
+    width: 50vw;
+    left: 29vw;
   }
   .page2 .joinLinePhone::before {
     content: "";
